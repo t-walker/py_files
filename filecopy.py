@@ -31,6 +31,12 @@ def parseConfig():
 def main():
   print("[!] You are currently working in:" + os.getcwd())
   
+  #Edit Config Y/N
+  answer = input("[?] Would you like to edit the configuration? (Y/N ")
+  if affirmative(answer):
+    editConfig()
+
+  #Backup Y/N
   answer = input("[?] Would you like to backup this directory? (Y/N) ")
 
   if affirmative(answer):
